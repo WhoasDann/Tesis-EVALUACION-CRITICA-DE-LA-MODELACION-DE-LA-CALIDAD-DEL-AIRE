@@ -1,0 +1,441 @@
+
+ ========== MMIF VERSION 4.1.1 2024-10-30 ==========
+
+    Reading control file: mmif.inp
+         Start date/hour:    2016122001
+           End date/hour:    2016122900
+     Processing duration:           216 hours
+               Time zone:            -3
+  Set 3-D sub-grid using:             I            J
+Low-Lft cell of sub-grid:            -5           -5
+Upr-Rgt cell of sub-grid:            -5           -5
+        Number of layers:            27
+   Pasquill-Gifford type:        GOLDER
+      Cloud Cover source:           WRF
+   CAL/SCI Mixing height:           WRF
+    AERMET Mixing height:           WRF
+     AERMET Over default:          AUTO
+       Number of  inputs:            10
+       Number of outputs:             5
+
+ Opened WRF file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-20_03_00_00
+ Precipitation read at time: 2016122000 LST = 2016-12-20_03:00:00 UTC
+
+ WRF was run with the hybrid vertical coordinate
+
+     Grid parameters for: Input (full) WRF domain
+              Projection:          LCC            1
+          Origin Lat/lon:    -33.17001    -70.30000
+          True Latitudes:    -45.00000    -25.00000
+                 NEST ID:            3
+   Un-staggered NX,NY,NZ:           81     81    59
+    Grid Resolution (km):        1.000
+ Low-Lft x/y corner (km):      -42.000      -42.000
+ Upr-Rgt x/y corner (km):       39.000       39.000
+ SW Lat-Lon corner (deg):    -33.55254    -70.76013
+ NE Lat-Lon corner (deg):    -32.81330    -69.87653
+
+     Grid parameters for: Output 3-D sub-domain
+                NX,NY,NZ:           71     71    27
+ Low-Lft x/y corner (km):      -37.000      -37.000
+ Upr-Rgt x/y corner (km):       34.000       34.000
+ SW Lat-Lon corner (deg):    -33.50710    -70.70514
+ NE Lat-Lon corner (deg):    -32.85913    -69.93060
+ Low-Lft I/J cell center:            6            6
+ Upr-Rgt I/J cell center:           76           76
+
+     Grid parameters for: Output 1-D point  #     1 met.bat
+ Low-Lft x/y corner (km):        0.000        1.000
+ Upr-Rgt x/y corner (km):        1.000        2.000
+ SW Lat-Lon corner (deg):    -33.16089    -70.29999
+ NE Lat-Lon corner (deg):    -33.15176    -70.28909
+         I/J cell center:           43           44
+
+     Grid parameters for: Output 1-D point  #     2 ONSITE.DAT
+ Low-Lft x/y corner (km):        0.000        1.000
+ Upr-Rgt x/y corner (km):        1.000        2.000
+ SW Lat-Lon corner (deg):    -33.16089    -70.29999
+ NE Lat-Lon corner (deg):    -33.15176    -70.28909
+         I/J cell center:           43           44
+
+     Grid parameters for: Output 1-D point  #     3 UPPER.DAT
+ Low-Lft x/y corner (km):        0.000        1.000
+ Upr-Rgt x/y corner (km):        1.000        2.000
+ SW Lat-Lon corner (deg):    -33.16089    -70.29999
+ NE Lat-Lon corner (deg):    -33.15176    -70.28909
+         I/J cell center:           43           44
+
+     Grid parameters for: Output 1-D point  #     4 SURFACE.DAT
+ Low-Lft x/y corner (km):        0.000        1.000
+ Upr-Rgt x/y corner (km):        1.000        2.000
+ SW Lat-Lon corner (deg):    -33.16089    -70.29999
+ NE Lat-Lon corner (deg):    -33.15176    -70.28909
+         I/J cell center:           43           44
+
+     Grid parameters for: Output 1-D point  #     5 met.useful.txt
+ Low-Lft x/y corner (km):        0.000        1.000
+ Upr-Rgt x/y corner (km):        1.000        2.000
+ SW Lat-Lon corner (deg):    -33.16089    -70.29999
+ NE Lat-Lon corner (deg):    -33.15176    -70.28909
+         I/J cell center:           43           44
+
+ In this WRF file:
+   10m winds            : found
+   Roughness length     : NOT FOUND
+   Albedo               : found
+   Monin-obukhov length : NOT FOUND
+   Leaf area index (LAI): found
+   WRF land-use data set: MODIFIED_IGBP_MODIS_NOAH
+   Number of categories :   21
+   Level         Sigma  Interface(m)     Center(m)
+       0      1.000000          0.00
+       1      0.997522         19.28          9.64
+       2      0.994804         40.39         29.84
+       3      0.991827         63.46         51.93
+       4      0.988565         88.67         76.07
+       5      0.984992        116.20        102.43
+       6      0.981082        146.23        131.21
+       7      0.976804        178.97        162.60
+       8      0.972126        214.64        196.81
+       9      0.967014        253.47        234.05
+      10      0.961431        295.69        274.58
+      11      0.955338        341.55        318.62
+      12      0.948693        391.33        366.44
+      13      0.941453        445.27        418.30
+      14      0.933571        503.67        474.47
+      15      0.925000        566.81        535.24
+      16      0.915688        634.97        600.89
+      17      0.905585        708.47        671.72
+      18      0.894638        787.60        748.03
+      19      0.882793        872.69        830.15
+      20      0.869996        964.05        918.37
+      21      0.856195       1062.02       1013.04
+      22      0.841338       1166.94       1114.48
+      23      0.825377       1279.14       1223.04
+      24      0.808267       1399.03       1339.09
+      25      0.789970       1527.02       1463.03
+      26      0.770453       1663.60       1595.31
+      27      0.749692       1809.32       1736.46
+      28      0.727677       1964.84       1887.08
+      29      0.704405       2130.97       2047.90
+      30      0.679891       2308.73       2219.85
+      31      0.654167       2499.30       2404.02
+      32      0.627281       2704.13       2601.72
+      33      0.599302       2924.84       2814.49
+      34      0.570320       3163.35       3044.10
+      35      0.540445       3421.82       3292.59
+      36      0.509788       3702.89       3562.36
+      37      0.478455       4009.77       3856.33
+      38      0.446574       4346.17       4177.97
+      39      0.414288       4716.31       4531.24
+      40      0.381760       5124.88       4920.60
+      41      0.349171       5576.82       5350.85
+      42      0.316715       6077.07       5826.95
+      43      0.284600       6630.81       6353.94
+      44      0.253046       7243.54       6937.17
+      45      0.222275       7921.12       7582.33
+      46      0.192512       8668.11       8294.62
+      47      0.165150       9429.05       9048.58
+      48      0.140843      10180.76       9804.91
+      49      0.119249      10932.36      10556.56
+      50      0.100065      11676.35      11304.35
+      51      0.083022      12408.04      12042.19
+      52      0.067881      13125.71      12766.87
+      53      0.054430      13830.62      13478.16
+      54      0.042481      14525.45      14178.03
+      55      0.031865      15213.32      14869.38
+      56      0.022434      15901.52      15557.42
+      57      0.014056      16595.23      16248.38
+      58      0.006612      17295.58      16945.41
+      59      0.000000      18001.67      17648.62
+
+ Output #     1 ONSITE BAT file
+ Output #     1 MET-to-ONSITE layers for ONSITE.DAT
+   Level  Interface(m)     Center(m)
+                  0.00
+                                2.00
+                               10.00
+       1         37.50         18.75
+       2         62.50         50.00
+       3         87.50         75.00
+       4        112.50        100.00
+       5        137.50        125.00
+       6        162.50        150.00
+       7        187.50        175.00
+       8        225.00        206.25
+       9        275.00        250.00
+      10        325.00        300.00
+      11        375.00        350.00
+      12        425.00        400.00
+      13        475.00        450.00
+      14        550.00        512.50
+      15        650.00        600.00
+      16        750.00        700.00
+      17        850.00        800.00
+      18        950.00        900.00
+      19       1250.00       1100.00
+      20       1750.00       1500.00
+      21       2250.00       2000.00
+      22       2750.00       2500.00
+      23       3250.00       3000.00
+      24       3750.00       3500.00
+      25       4250.00       4000.00
+      26       4750.00       4500.00
+      27       5250.00       5000.00
+
+ For ONSITE output #     1, at initial output time:
+        Elevation (m): 3469.6040
+         Landuse code:        16
+ Roughness length (m):  0.010000
+          Bowen ratio:   -1.0000
+     Noon-time Albedo:    0.1350
+
+ Output #     2 ONSITE DATA  file   at 2016122001 LST = 2016122004 UTC
+ Output #     3 UPPERAIR FSL file   at 2016122001 LST = 2016122004 UTC
+ Output #     5 ONSITE USEFUL INFO file
+ Hourly output written to all files at 2016122001 LST = 2016122004 UTC
+ Hourly output written to all files at 2016122002 LST = 2016122005 UTC
+ Hourly output written to all files at 2016122003 LST = 2016122006 UTC
+ Hourly output written to all files at 2016122004 LST = 2016122007 UTC
+ Hourly output written to all files at 2016122005 LST = 2016122008 UTC
+ Hourly output written to all files at 2016122006 LST = 2016122009 UTC
+ Hourly output written to all files at 2016122007 LST = 2016122010 UTC
+ Hourly output written to all files at 2016122008 LST = 2016122011 UTC
+ Hourly output written to all files at 2016122009 LST = 2016122012 UTC
+ Hourly output written to all files at 2016122010 LST = 2016122013 UTC
+ Hourly output written to all files at 2016122011 LST = 2016122014 UTC
+ Hourly output written to all files at 2016122012 LST = 2016122015 UTC
+ Hourly output written to all files at 2016122013 LST = 2016122016 UTC
+ Hourly output written to all files at 2016122014 LST = 2016122017 UTC
+ Hourly output written to all files at 2016122015 LST = 2016122018 UTC
+ Hourly output written to all files at 2016122016 LST = 2016122019 UTC
+ Hourly output written to all files at 2016122017 LST = 2016122020 UTC
+ Hourly output written to all files at 2016122018 LST = 2016122021 UTC
+ Hourly output written to all files at 2016122019 LST = 2016122022 UTC
+ Hourly output written to all files at 2016122020 LST = 2016122023 UTC
+ Hourly output written to all files at 2016122021 LST = 2016122100 UTC
+ Hourly output written to all files at 2016122022 LST = 2016122101 UTC
+ Hourly output written to all files at 2016122023 LST = 2016122102 UTC
+ Done  with file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-20_03_00_00
+
+ Opened WRF file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-21_03_00_00
+ Hourly output written to all files at 2016122100 LST = 2016122103 UTC
+ Hourly output written to all files at 2016122101 LST = 2016122104 UTC
+ Hourly output written to all files at 2016122102 LST = 2016122105 UTC
+ Hourly output written to all files at 2016122103 LST = 2016122106 UTC
+ Hourly output written to all files at 2016122104 LST = 2016122107 UTC
+ Hourly output written to all files at 2016122105 LST = 2016122108 UTC
+ Hourly output written to all files at 2016122106 LST = 2016122109 UTC
+ Hourly output written to all files at 2016122107 LST = 2016122110 UTC
+ Hourly output written to all files at 2016122108 LST = 2016122111 UTC
+ Hourly output written to all files at 2016122109 LST = 2016122112 UTC
+ Hourly output written to all files at 2016122110 LST = 2016122113 UTC
+ Hourly output written to all files at 2016122111 LST = 2016122114 UTC
+ Hourly output written to all files at 2016122112 LST = 2016122115 UTC
+ Hourly output written to all files at 2016122113 LST = 2016122116 UTC
+ Hourly output written to all files at 2016122114 LST = 2016122117 UTC
+ Hourly output written to all files at 2016122115 LST = 2016122118 UTC
+ Hourly output written to all files at 2016122116 LST = 2016122119 UTC
+ Hourly output written to all files at 2016122117 LST = 2016122120 UTC
+ Hourly output written to all files at 2016122118 LST = 2016122121 UTC
+ Hourly output written to all files at 2016122119 LST = 2016122122 UTC
+ Hourly output written to all files at 2016122120 LST = 2016122123 UTC
+ Hourly output written to all files at 2016122121 LST = 2016122200 UTC
+ Hourly output written to all files at 2016122122 LST = 2016122201 UTC
+ Hourly output written to all files at 2016122123 LST = 2016122202 UTC
+ Done  with file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-21_03_00_00
+
+ Opened WRF file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-22_03_00_00
+ Hourly output written to all files at 2016122200 LST = 2016122203 UTC
+ Hourly output written to all files at 2016122201 LST = 2016122204 UTC
+ Hourly output written to all files at 2016122202 LST = 2016122205 UTC
+ Hourly output written to all files at 2016122203 LST = 2016122206 UTC
+ Hourly output written to all files at 2016122204 LST = 2016122207 UTC
+ Hourly output written to all files at 2016122205 LST = 2016122208 UTC
+ Hourly output written to all files at 2016122206 LST = 2016122209 UTC
+ Hourly output written to all files at 2016122207 LST = 2016122210 UTC
+ Hourly output written to all files at 2016122208 LST = 2016122211 UTC
+ Hourly output written to all files at 2016122209 LST = 2016122212 UTC
+ Hourly output written to all files at 2016122210 LST = 2016122213 UTC
+ Hourly output written to all files at 2016122211 LST = 2016122214 UTC
+ Hourly output written to all files at 2016122212 LST = 2016122215 UTC
+ Hourly output written to all files at 2016122213 LST = 2016122216 UTC
+ Hourly output written to all files at 2016122214 LST = 2016122217 UTC
+ Hourly output written to all files at 2016122215 LST = 2016122218 UTC
+ Hourly output written to all files at 2016122216 LST = 2016122219 UTC
+ Hourly output written to all files at 2016122217 LST = 2016122220 UTC
+ Hourly output written to all files at 2016122218 LST = 2016122221 UTC
+ Hourly output written to all files at 2016122219 LST = 2016122222 UTC
+ Hourly output written to all files at 2016122220 LST = 2016122223 UTC
+ Hourly output written to all files at 2016122221 LST = 2016122300 UTC
+ Hourly output written to all files at 2016122222 LST = 2016122301 UTC
+ Hourly output written to all files at 2016122223 LST = 2016122302 UTC
+ Done  with file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-22_03_00_00
+
+ Opened WRF file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-23_03_00_00
+ Hourly output written to all files at 2016122300 LST = 2016122303 UTC
+ Hourly output written to all files at 2016122301 LST = 2016122304 UTC
+ Hourly output written to all files at 2016122302 LST = 2016122305 UTC
+ Hourly output written to all files at 2016122303 LST = 2016122306 UTC
+ Hourly output written to all files at 2016122304 LST = 2016122307 UTC
+ Hourly output written to all files at 2016122305 LST = 2016122308 UTC
+ Hourly output written to all files at 2016122306 LST = 2016122309 UTC
+ Hourly output written to all files at 2016122307 LST = 2016122310 UTC
+ Hourly output written to all files at 2016122308 LST = 2016122311 UTC
+ Hourly output written to all files at 2016122309 LST = 2016122312 UTC
+ Hourly output written to all files at 2016122310 LST = 2016122313 UTC
+ Hourly output written to all files at 2016122311 LST = 2016122314 UTC
+ Hourly output written to all files at 2016122312 LST = 2016122315 UTC
+ Hourly output written to all files at 2016122313 LST = 2016122316 UTC
+ Hourly output written to all files at 2016122314 LST = 2016122317 UTC
+ Hourly output written to all files at 2016122315 LST = 2016122318 UTC
+ Hourly output written to all files at 2016122316 LST = 2016122319 UTC
+ Hourly output written to all files at 2016122317 LST = 2016122320 UTC
+ Hourly output written to all files at 2016122318 LST = 2016122321 UTC
+ Hourly output written to all files at 2016122319 LST = 2016122322 UTC
+ Hourly output written to all files at 2016122320 LST = 2016122323 UTC
+ Hourly output written to all files at 2016122321 LST = 2016122400 UTC
+ Hourly output written to all files at 2016122322 LST = 2016122401 UTC
+ Hourly output written to all files at 2016122323 LST = 2016122402 UTC
+ Done  with file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-23_03_00_00
+
+ Opened WRF file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-24_03_00_00
+ Hourly output written to all files at 2016122400 LST = 2016122403 UTC
+ Hourly output written to all files at 2016122401 LST = 2016122404 UTC
+ Hourly output written to all files at 2016122402 LST = 2016122405 UTC
+ Hourly output written to all files at 2016122403 LST = 2016122406 UTC
+ Hourly output written to all files at 2016122404 LST = 2016122407 UTC
+ Hourly output written to all files at 2016122405 LST = 2016122408 UTC
+ Hourly output written to all files at 2016122406 LST = 2016122409 UTC
+ Hourly output written to all files at 2016122407 LST = 2016122410 UTC
+ Hourly output written to all files at 2016122408 LST = 2016122411 UTC
+ Hourly output written to all files at 2016122409 LST = 2016122412 UTC
+ Hourly output written to all files at 2016122410 LST = 2016122413 UTC
+ Hourly output written to all files at 2016122411 LST = 2016122414 UTC
+ Hourly output written to all files at 2016122412 LST = 2016122415 UTC
+ Hourly output written to all files at 2016122413 LST = 2016122416 UTC
+ Hourly output written to all files at 2016122414 LST = 2016122417 UTC
+ Hourly output written to all files at 2016122415 LST = 2016122418 UTC
+ Hourly output written to all files at 2016122416 LST = 2016122419 UTC
+ Hourly output written to all files at 2016122417 LST = 2016122420 UTC
+ Hourly output written to all files at 2016122418 LST = 2016122421 UTC
+ Hourly output written to all files at 2016122419 LST = 2016122422 UTC
+ Hourly output written to all files at 2016122420 LST = 2016122423 UTC
+ Hourly output written to all files at 2016122421 LST = 2016122500 UTC
+ Hourly output written to all files at 2016122422 LST = 2016122501 UTC
+ Hourly output written to all files at 2016122423 LST = 2016122502 UTC
+ Done  with file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-24_03_00_00
+
+ Opened WRF file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-25_03_00_00
+ Hourly output written to all files at 2016122500 LST = 2016122503 UTC
+ Hourly output written to all files at 2016122501 LST = 2016122504 UTC
+ Hourly output written to all files at 2016122502 LST = 2016122505 UTC
+ Hourly output written to all files at 2016122503 LST = 2016122506 UTC
+ Hourly output written to all files at 2016122504 LST = 2016122507 UTC
+ Hourly output written to all files at 2016122505 LST = 2016122508 UTC
+ Hourly output written to all files at 2016122506 LST = 2016122509 UTC
+ Hourly output written to all files at 2016122507 LST = 2016122510 UTC
+ Hourly output written to all files at 2016122508 LST = 2016122511 UTC
+ Hourly output written to all files at 2016122509 LST = 2016122512 UTC
+ Hourly output written to all files at 2016122510 LST = 2016122513 UTC
+ Hourly output written to all files at 2016122511 LST = 2016122514 UTC
+ Hourly output written to all files at 2016122512 LST = 2016122515 UTC
+ Hourly output written to all files at 2016122513 LST = 2016122516 UTC
+ Hourly output written to all files at 2016122514 LST = 2016122517 UTC
+ Hourly output written to all files at 2016122515 LST = 2016122518 UTC
+ Hourly output written to all files at 2016122516 LST = 2016122519 UTC
+ Hourly output written to all files at 2016122517 LST = 2016122520 UTC
+ Hourly output written to all files at 2016122518 LST = 2016122521 UTC
+ Hourly output written to all files at 2016122519 LST = 2016122522 UTC
+ Hourly output written to all files at 2016122520 LST = 2016122523 UTC
+ Hourly output written to all files at 2016122521 LST = 2016122600 UTC
+ Hourly output written to all files at 2016122522 LST = 2016122601 UTC
+ Hourly output written to all files at 2016122523 LST = 2016122602 UTC
+ Done  with file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-25_03_00_00
+
+ Opened WRF file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-26_03_00_00
+ Hourly output written to all files at 2016122600 LST = 2016122603 UTC
+ Hourly output written to all files at 2016122601 LST = 2016122604 UTC
+ Hourly output written to all files at 2016122602 LST = 2016122605 UTC
+ Hourly output written to all files at 2016122603 LST = 2016122606 UTC
+ Hourly output written to all files at 2016122604 LST = 2016122607 UTC
+ Hourly output written to all files at 2016122605 LST = 2016122608 UTC
+ Hourly output written to all files at 2016122606 LST = 2016122609 UTC
+ Hourly output written to all files at 2016122607 LST = 2016122610 UTC
+ Hourly output written to all files at 2016122608 LST = 2016122611 UTC
+ Hourly output written to all files at 2016122609 LST = 2016122612 UTC
+ Hourly output written to all files at 2016122610 LST = 2016122613 UTC
+ Hourly output written to all files at 2016122611 LST = 2016122614 UTC
+ Hourly output written to all files at 2016122612 LST = 2016122615 UTC
+ Hourly output written to all files at 2016122613 LST = 2016122616 UTC
+ Hourly output written to all files at 2016122614 LST = 2016122617 UTC
+ Hourly output written to all files at 2016122615 LST = 2016122618 UTC
+ Hourly output written to all files at 2016122616 LST = 2016122619 UTC
+ Hourly output written to all files at 2016122617 LST = 2016122620 UTC
+ Hourly output written to all files at 2016122618 LST = 2016122621 UTC
+ Hourly output written to all files at 2016122619 LST = 2016122622 UTC
+ Hourly output written to all files at 2016122620 LST = 2016122623 UTC
+ Hourly output written to all files at 2016122621 LST = 2016122700 UTC
+ Hourly output written to all files at 2016122622 LST = 2016122701 UTC
+ Hourly output written to all files at 2016122623 LST = 2016122702 UTC
+ Done  with file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-26_03_00_00
+
+ Opened WRF file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-27_03_00_00
+ Hourly output written to all files at 2016122700 LST = 2016122703 UTC
+ Hourly output written to all files at 2016122701 LST = 2016122704 UTC
+ Hourly output written to all files at 2016122702 LST = 2016122705 UTC
+ Hourly output written to all files at 2016122703 LST = 2016122706 UTC
+ Hourly output written to all files at 2016122704 LST = 2016122707 UTC
+ Hourly output written to all files at 2016122705 LST = 2016122708 UTC
+ Hourly output written to all files at 2016122706 LST = 2016122709 UTC
+ Hourly output written to all files at 2016122707 LST = 2016122710 UTC
+ Hourly output written to all files at 2016122708 LST = 2016122711 UTC
+ Hourly output written to all files at 2016122709 LST = 2016122712 UTC
+ Hourly output written to all files at 2016122710 LST = 2016122713 UTC
+ Hourly output written to all files at 2016122711 LST = 2016122714 UTC
+ Hourly output written to all files at 2016122712 LST = 2016122715 UTC
+ Hourly output written to all files at 2016122713 LST = 2016122716 UTC
+ Hourly output written to all files at 2016122714 LST = 2016122717 UTC
+ Hourly output written to all files at 2016122715 LST = 2016122718 UTC
+ Hourly output written to all files at 2016122716 LST = 2016122719 UTC
+ Hourly output written to all files at 2016122717 LST = 2016122720 UTC
+ Hourly output written to all files at 2016122718 LST = 2016122721 UTC
+ Hourly output written to all files at 2016122719 LST = 2016122722 UTC
+ Hourly output written to all files at 2016122720 LST = 2016122723 UTC
+ Hourly output written to all files at 2016122721 LST = 2016122800 UTC
+ Hourly output written to all files at 2016122722 LST = 2016122801 UTC
+ Hourly output written to all files at 2016122723 LST = 2016122802 UTC
+ Done  with file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-27_03_00_00
+
+ Opened WRF file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-28_03_00_00
+ Hourly output written to all files at 2016122800 LST = 2016122803 UTC
+ Hourly output written to all files at 2016122801 LST = 2016122804 UTC
+ Hourly output written to all files at 2016122802 LST = 2016122805 UTC
+ Hourly output written to all files at 2016122803 LST = 2016122806 UTC
+ Hourly output written to all files at 2016122804 LST = 2016122807 UTC
+ Hourly output written to all files at 2016122805 LST = 2016122808 UTC
+ Hourly output written to all files at 2016122806 LST = 2016122809 UTC
+ Hourly output written to all files at 2016122807 LST = 2016122810 UTC
+ Hourly output written to all files at 2016122808 LST = 2016122811 UTC
+ Hourly output written to all files at 2016122809 LST = 2016122812 UTC
+ Hourly output written to all files at 2016122810 LST = 2016122813 UTC
+ Hourly output written to all files at 2016122811 LST = 2016122814 UTC
+ Hourly output written to all files at 2016122812 LST = 2016122815 UTC
+ Hourly output written to all files at 2016122813 LST = 2016122816 UTC
+ Hourly output written to all files at 2016122814 LST = 2016122817 UTC
+ Hourly output written to all files at 2016122815 LST = 2016122818 UTC
+ Hourly output written to all files at 2016122816 LST = 2016122819 UTC
+ Hourly output written to all files at 2016122817 LST = 2016122820 UTC
+ Hourly output written to all files at 2016122818 LST = 2016122821 UTC
+ Hourly output written to all files at 2016122819 LST = 2016122822 UTC
+ Hourly output written to all files at 2016122820 LST = 2016122823 UTC
+ Hourly output written to all files at 2016122821 LST = 2016122900 UTC
+ Hourly output written to all files at 2016122822 LST = 2016122901 UTC
+ Hourly output written to all files at 2016122823 LST = 2016122902 UTC
+ Done  with file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-28_03_00_00
+
+ Opened WRF file: /archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Ensayo_7dias_20161221_2026-10-14\WRF\BASE\wrfout_d03_2016-12-29_03_00_00
+ Hourly output written to all files at 2016122900 LST = 2016122903 UTC
+
+ Reached requested ending date/hour; run completed normally.
+

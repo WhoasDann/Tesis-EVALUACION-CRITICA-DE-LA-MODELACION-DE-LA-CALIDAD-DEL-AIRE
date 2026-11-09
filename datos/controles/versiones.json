@@ -1,0 +1,12 @@
+{
+  "aermet.exe": {
+    "version": "26135",
+    "plataforma": "Windows",
+    "sha256": "2ed8a9c5923abccca61873796eabcdcbaf697bff072f90c5907d11159f935265"
+  },
+  "aermod.exe": {
+    "version": "26135",
+    "plataforma": "Windows",
+    "sha256": "599b491b021c7ec254ba3a1062386f287e56e54a0d3bb9b67cfa72275d6916da"
+  }
+}

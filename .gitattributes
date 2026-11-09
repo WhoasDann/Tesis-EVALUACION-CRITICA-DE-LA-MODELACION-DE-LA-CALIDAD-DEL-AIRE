@@ -1,0 +1,2 @@
+# La verificación SHA-256 utiliza los bytes distribuidos, incluso en Windows.
+* -text

@@ -1,0 +1,18 @@
+from pathlib import Path
+import subprocess,json
+from prepare_joint import ROOT,OUT,read,save,now
+r=subprocess.run(['ssh','-T','-o','BatchMode=yes','-o','ConnectTimeout=8','windows3-tesis',r'type C:\Users\Daniel\Documents\Tesis_Calculo_20261027\jobs\joint14_20261027\panel\status.json'],capture_output=True,text=True,check=True,timeout=30)
+s=json.loads(r.stdout);assert s['state']=='RUNNING' and s['assigned']==252 and len(s['active'])==2 and not s['errors']
+save(OUT/'Estado_remoto.json',s)
+collector=read(OUT/'collector.lock')
+save(OUT/'Arranque.json',dict(status='JOINT_PILOT_RUNNING',verified_utc=now(),daily_cases=252,meteorological_days=14,scenarios=9,pollutants=2,receptors=40,remote=s,collector=collector,collector_exec_session=98979,previous_uniform_extension_dispatched=False,base_production_queues_modified=False))
+p=ROOT/'outputs/Tercer_PC_2026-10-27/Conexion.json';c=read(p)
+c.update(status='JOINT_PILOT_RUNNING',verified_utc=now(),production_job_assigned=True,job_scope='14-day exploratory joint T/u/v pilot; 7 days per season, BASE+8, both pollutants, fixed40receptor panel',assigned_cases=252,pilot_outputs=str(OUT),remote_job_root='C:/Users/Daniel/Documents/Tesis_Calculo_20261027/jobs/joint14_20261027/panel',next_step='Receive complete matched scenario slices across both seasons; summarize descriptive changes and spread only at the sampled points. No automatic full-grid or scenario expansion.')
+save(p,c)
+intro='Estado vigente: piloto conjunto de14días en ejecución (252casos diarios de40receptores,BASE+8realizaciones,verano e invierno,ambos contaminantes). Seguimiento: '+str(OUT/'Estado.json')+'. El anterior piloto de transferencia terminó y la extensión UNIFORM de malla completa quedó preparada sin despachar por cambio de prioridad del usuario.\n\n'
+p=ROOT/'outputs/Tercer_PC_2026-10-27/LEEME.md';p.write_text(intro+p.read_text(encoding='utf-8'),encoding='utf-8')
+p=Path(r'/archivo/usuario\Documents\Codex\2026-10-08\hem\outputs\Contexto_vigente.md')
+heading='## Prioridad del usuario: visión parcial amplia; piloto conjunto activo — 27 de octubre de 2026\n\n'
+text='El usuario pidió avanzar con resultados parciales de todas las condiciones y delegó el alcance. Se inició en windows3-tesis el piloto de7días verano(1–7feb) y7invierno(25–31jul), BASE+ocho trayectorias conjuntas RIDGE_24 congeladas, MP10/MP25,40nodos fijos distribuidos entre todas las zonas. Son252casos pequeños, ordenados por posición diaria y alternando temporadas/escenarios para completar primero una comparación amplia.\n\nEl panel incluye los4puntos sensibles y nodos de todos los glaciares,MINA/GENERAL; sus máximos son SOLO de nodos muestreados. No reemplaza la malla6295ni estima P95/uncertumbre calibrada. La transferencia ONSITE usa PBL para T/u/v y RH fija; hipótesis explícita, sin reintegraciónWRF. Los18preprocesamientos pasaron controles;167h verano y168h invierno válidas. El faltante de3feb permanece.\n\nEntrega y estado: '+str(OUT)+'; Estado.json y Resultados.md. Receptor PID'+str(collector['pid'])+', sesión98979. No duplicar la cola ni agregar a recibos BASE estacionales. Los lotes BASE actuales en Windows/Linux siguen sin cambios.\n\nEl piloto anterior de viento ya terminó(8casos cortos+4malla completa). La extensión Contraste_uniforme_2026-10-27 quedó preparada SIN DESPACHAR: el usuario cambió la prioridad antes de arrancarla. No reactivarla automáticamente.\n\n'
+old=p.read_text(encoding='utf-8');assert heading not in old;p.write_text(heading+text+old,encoding='utf-8')
+print(json.dumps(dict(active=[x['id'] for x in s['active']],collector_pid=collector['pid'])))

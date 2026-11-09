@@ -1,0 +1,14 @@
+Fuente de Emisión,MP,MP10,"MP2,5",CO,Nox,SO2,NH3
+Perforación,33,17.3,17.3,,,,
+Tronadura,38.7,20.1,1.2,,,,
+Transferencias (carga),190.8,90.2,13.7,,,,
+Transferencias (descargas),132,62.4,9.5,,,,
+Planta de chancado,990.7,107.8,19.6,,,,
+Tránsito,7913,2357.2,237.1,,,,
+Movimiento maquinaria,1748.6,392,183.6,,,,
+Erosión eólica,117.9,58.9,8.8,,,,
+Combustión vehicular,1.7,1.7,1.7,8.8,35.2,0.1,0.016
+Combustión maquinaria ,66.5,66.5,66.5,181.5,868.7,1.2,
+Generadores eléctricos,0.2,0.1,0,0.5,2.4,0.1,0.004
+Nivelación,456.1,133.5,14.1,,,,
+Total,11689.200000000003,3307.7,573.1,191,906,1.4,0.02

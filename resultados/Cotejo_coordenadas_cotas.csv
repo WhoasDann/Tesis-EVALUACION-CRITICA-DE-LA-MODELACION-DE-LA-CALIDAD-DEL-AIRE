@@ -1,0 +1,5 @@
+receptor,x,y,elevation_m,hill_m,ADC_x,ADC_y,ADC_elevation_m,horizontal_difference_m,elevation_difference_ours_minus_ADC_m,source_table
+Los Bronces,380148.0,6331485.0,3440.26,5820.0,380148.0,6331485.0,3712.0,0.0,-271.7399999999998,"VI.4, máximo anual MP10"
+Piedra Carvajal,381128.0,6323667.0,3265.84,5820.0,381128.0,6323666.0,3817.6,1.0,-551.7599999999998,VI.1
+La Paloma,381759.0,6327947.0,4830.99,5149.0,,,,,,No punto PM equivalente
+Sulfatos,384254.0,6324494.0,4198.22,5442.0,384261.0,6324500.0,4374.6,9.219544457292887,-176.3800000000001,VI.1
