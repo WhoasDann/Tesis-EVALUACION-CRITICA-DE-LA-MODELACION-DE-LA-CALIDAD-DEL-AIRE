@@ -1,0 +1,47 @@
+{
+  "status": "REPRODUCED_AND_COMPARED",
+  "finished_utc": "2026-11-15T23:49:54.786821+00:00",
+  "protocol_sha256": "55b97ee22cd9a2225c6ec1c48e42f95614b22e7062edd473660e39ed324306b3",
+  "script_sha256": "49d9aff0ebcde25e186f3a3e8e1e0203c1bccf914c0c3b576adf4bb46acb4269",
+  "audit": [
+    {
+      "season": "VERANO",
+      "original_records": 737,
+      "original_valid_hours": 737,
+      "original_days": 31,
+      "original_hours_on_eligible_days": 737,
+      "joint_common_before_daily_filter": 734,
+      "max_residual_reproduction_error": 3.552713678800501e-15,
+      "max_sd_reproduction_error": 0.0,
+      "common_hours": 734,
+      "common_days": 31,
+      "clocks_identical_in_training": "fijo_menos3"
+    },
+    {
+      "season": "INVIERNO",
+      "original_records": 711,
+      "original_valid_hours": 710,
+      "original_days": 29,
+      "original_hours_on_eligible_days": 690,
+      "joint_common_before_daily_filter": 706,
+      "max_residual_reproduction_error": 9.059419880941277e-14,
+      "max_sd_reproduction_error": 1.1102230246251565e-15,
+      "common_hours": 686,
+      "common_days": 29,
+      "clocks_identical_in_training": "fijo_menos4"
+    }
+  ],
+  "outputs": {
+    "Amplitudes_SD.csv": "0de7a0457212c1dc6976e1db793415db5e6f326a9290862b2b815806b536c9fa",
+    "Seleccion_ternas.csv": "08bdf8ccf4c90632231923b6af7275dc31b9e9cef856c26f31cc257feab7520c",
+    "Ternas_fechas_originales.csv": "a9cbef168b19f7d5efd5b32b12cbb8cb07fdfb4c42bf37af8476fcf9be213f8a",
+    "Reproduccion_ternas_originales.csv": "20a62733a4f77dfc4251cbc65f2a4c9bc8ba268d85dd521d1098ab5a93f90304",
+    "Cobertura.csv": "73dd5061a634dc2c092efd842072ab2689a1939fdf4e944e95f7e86819c76b0f",
+    "Medias_diarias_comunes.csv": "0773596887e0123356f0148bb9534f6e520a9e31620d62d94b0380a360b92640",
+    "Residuos_horarios_comunes.csv": "8b2defac373ff19005ff8cd4edaec7f671113ba1c37d750703b893ee7585feae"
+  },
+  "no_model_runs": true,
+  "no_clock_selected": true,
+  "no_concentration_changes": true,
+  "physical_validation": false
+}

@@ -1,0 +1,52 @@
+--- original/analizar.py
++++ portable/analizar.py
+@@ -4,13 +4,12 @@
+ import hashlib,json,sys
+ import numpy as np
+ import pandas as pd
+-ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'outputs/Sensibilidad_reloj_ternas_2026-11-15'
+-H=Path('C:/Users/dcitu/Documents/Codex/2026-10-08/hem')
+-sys.path.insert(0,str(H/'outputs/Biblioteca_Tesis'))
++from entorno import ROOT, OUT, paths
++sys.path.insert(0,str(ROOT/'biblioteca'))
+ from tesis.reloj import parear
+ sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+ protocol=json.loads((OUT/'Protocolo.json').read_text(encoding='utf8'))
+-paths={k:Path(v['path']) for k,v in protocol['inputs'].items()}
++# Rutas relativas verificadas por entorno.py; protocolo original conservado.
+ for k,p in paths.items():assert sha(p)==protocol['inputs'][k]['sha256']
+ scale=json.loads(paths['amplitudes'].read_text())['scales']
+ scalar=json.loads(paths['amplitud_WS'].read_text())['scales']
+--- original/verificar.py
++++ portable/verificar.py
+@@ -5,11 +5,11 @@
+ from bisect import bisect_left
+ from collections import defaultdict
+ import csv,hashlib,json,math
+-ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'outputs/Sensibilidad_reloj_ternas_2026-11-15'
++from entorno import ROOT, OUT, paths
+ read=lambda p:list(csv.DictReader(Path(p).open(encoding='utf-8-sig',newline='')))
+ sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+ protocol=json.loads((OUT/'Protocolo.json').read_text(encoding='utf8'))
+-paths={k:Path(v['path']) for k,v in protocol['inputs'].items()}
++# Rutas relativas verificadas por entorno.py; protocolo original conservado.
+ for k,p in paths.items():assert sha(p)==protocol['inputs'][k]['sha256']
+ obs={r['Fecha_original']:r for r in read(paths['observaciones'])}
+ model={}
+--- original/figuras.py
++++ portable/figuras.py
+@@ -2,13 +2,12 @@
+ import sys,json,hashlib
+ import pandas as pd
+ import numpy as np
+-sys.path.insert(0,'C:/Users/dcitu/Documents/Codex/2026-10-19/es/work/python_deps')
+ import matplotlib
+ matplotlib.use('Agg')
+ import matplotlib.pyplot as plt
+ from matplotlib.colors import ListedColormap
+ from matplotlib.patches import Patch
+-ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'outputs/Sensibilidad_reloj_ternas_2026-11-15'
++from entorno import ROOT, OUT, paths
+ D=OUT/'Figuras';D.mkdir(exist_ok=True)
+ plt.rcParams.update({'font.family':'DejaVu Sans','font.size':9,'axes.spines.top':False,'axes.spines.right':False})
+ a=pd.read_csv(OUT/'Amplitudes_SD.csv');s=pd.read_csv(OUT/'Seleccion_ternas.csv');f=pd.read_csv(OUT/'Ternas_fechas_originales.csv')

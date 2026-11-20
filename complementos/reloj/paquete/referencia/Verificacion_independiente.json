@@ -1,0 +1,11 @@
+{
+  "status": "INDEPENDENT_SCALAR_CHECK_PASSED",
+  "hour_case_rows": 11360,
+  "residual_values": 45440,
+  "max_residual_error": 7.105427357601002e-15,
+  "max_sd_error": 8.881784197001252e-16,
+  "shared_observation_ids_verified": true,
+  "arithmetic_method": "datetime/zoneinfo + bisect + interpolacion escalar + math.fsum; no importacion de la biblioteca de emparejamiento",
+  "protocol_sha256": "55b97ee22cd9a2225c6ec1c48e42f95614b22e7062edd473660e39ed324306b3",
+  "script_sha256": "46fe8fff397c069047f9e3951c2bd08a1d35c926f449adf7055cdeaa34d7160a"
+}

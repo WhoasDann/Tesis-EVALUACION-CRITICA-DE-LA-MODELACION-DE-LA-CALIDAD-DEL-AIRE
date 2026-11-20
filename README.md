@@ -53,6 +53,10 @@ T es la temperatura, u la componente del viento hacia el este y v la componente 
 
 El verano comprende el 21 de diciembre de 2016 al 20 de marzo de 2017 y el invierno, el 21 de junio al 20 de septiembre de 2017. El último día de verano tiene 17 horas. En invierno se considera el cambio de hora civil. Se distingue el escenario de mayor media de período del escenario de mayor concentración diaria. Los resultados describen sensibilidad en el panel evaluado.
 
+## Complementos posteriores
+
+Los [complementos de noviembre](complementos/README.md) incorporan la reproducción portable del diagnóstico de horario, la evidencia de 42 controles numéricos de H1/H2, los diagnósticos de transferencia física y la auditoría de unidades. La campaña original de 3.314 casos se conserva. Cada complemento identifica sus insumos, controles y límites; solo el diagnóstico horario se presenta aquí como una nueva ejecución autónoma desde los insumos distribuidos.
+
 ## Archivos
 
 | Directorio | Contenido y uso |

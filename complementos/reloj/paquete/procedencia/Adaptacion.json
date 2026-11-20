@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-19",
+  "original_script_sha256": {
+    "analizar.py": "49d9aff0ebcde25e186f3a3e8e1e0203c1bccf914c0c3b576adf4bb46acb4269",
+    "verificar.py": "46fe8fff397c069047f9e3951c2bd08a1d35c926f449adf7055cdeaa34d7160a",
+    "figuras.py": "5c047c7a8f7dbfee116567064d85f50285de6d2ee7030ea510b6673179e17a9e"
+  },
+  "computation_bodies_identical": true,
+  "computation_body_sha256": {
+    "analizar.py": "be564340c5633341bb2f85ad62a9f2b69ef2d1f864fc6569df4ae4e622ecc3cc",
+    "verificar.py": "d9a0125c1984d06a5ffd25c1a10bdade37ba31089f26aacc3fe1229b5edda67e",
+    "figuras.py": "61d468e84678c163bdfc9094130482a31887877645ac949f9da342a1c98090f0"
+  },
+  "supplemental_library_sha256": {
+    "comun.py": "2364a99fc4d4bbbd258177741ae2e79e6d3407b55886b2b4db3959c68e80d6bd",
+    "__init__.py": "1d77a24b9c4e2c6300c7bc8ae7e3aecb1c2540f74ca7a832732c87c13bfbdfc9"
+  },
+  "protocol_unchanged": true
+}

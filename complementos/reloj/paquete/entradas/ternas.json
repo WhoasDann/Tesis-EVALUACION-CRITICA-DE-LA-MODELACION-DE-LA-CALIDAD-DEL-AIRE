@@ -1,0 +1,101 @@
+{
+  "created_utc": "2026-11-04T17:18:37.014026+00:00",
+  "status": "FROZEN_BEFORE_NEW_CONCENTRATIONS",
+  "purpose": "Challenge numerical adverse candidates with complete empirical daily discrepancy vectors, not independently combined marginal extremes.",
+  "prototypes": [
+    {
+      "season": "VERANO",
+      "scenario": "OBS_U",
+      "target": "U_PLUS",
+      "source_day": "2016-12-27",
+      "delta": [
+        0.6694807323608013,
+        3.030182267300908,
+        1.518935042466518
+      ],
+      "distance_SD": 1.0483857476044318
+    },
+    {
+      "season": "VERANO",
+      "scenario": "OBS_V",
+      "target": "V_MINUS",
+      "source_day": "2017-01-18",
+      "delta": [
+        0.539066212652961,
+        -0.4774545080758918,
+        -0.4314661418373204
+      ],
+      "distance_SD": 1.1001767012184438
+    },
+    {
+      "season": "INVIERNO",
+      "scenario": "OBS_U",
+      "target": "U_PLUS",
+      "source_day": "2017-07-02",
+      "delta": [
+        -0.4309873433427804,
+        5.001077475867215,
+        5.254587584106854
+      ],
+      "distance_SD": 0.9243111517881724
+    }
+  ],
+  "civil_days": {
+    "VERANO": [
+      "2017-01-12",
+      "2017-01-16",
+      "2017-01-26",
+      "2017-02-20",
+      "2017-02-28"
+    ],
+    "INVIERNO": [
+      "2017-06-28",
+      "2017-07-09",
+      "2017-08-02",
+      "2017-08-20",
+      "2017-09-13",
+      "2017-09-15"
+    ]
+  },
+  "LST_days": {
+    "VERANO": [
+      "2017-01-12",
+      "2017-01-16",
+      "2017-01-26",
+      "2017-02-20",
+      "2017-02-28"
+    ],
+    "INVIERNO": [
+      "2017-06-28",
+      "2017-07-09",
+      "2017-08-02",
+      "2017-08-19",
+      "2017-08-20",
+      "2017-09-12",
+      "2017-09-13",
+      "2017-09-14",
+      "2017-09-15"
+    ]
+  },
+  "new_cases": 38,
+  "receptors": 40,
+  "selection": "Retrospective choice of target U_PLUS or V_MINUS from completed sensitivity. Before new concentrations, choose one ACTUAL complete daily (dT,du,dv) tuple minimizing Euclidean distance to target after division by the original season-specific marginal SD. All three components come from the SAME observed day; no averaging of selected extremes, random draws, fitting, or probabilities.",
+  "scope": "Apply each constant empirical daily vector to full seasonal ONSITE context so AERMET has the same context as prior campaign. Only selected episode dates are dispersed, with previous LST dates required to reconstruct civil days. These outputs cannot estimate seasonal averages or find the maximum over unrun days.",
+  "physical_basis": "Retains empirical co-occurrence of the three station-scale daily discrepancies and the existing continuous vertical taper. This supports the chosen amplitude combination, NOT its persistent seasonal occurrence, its transfer between columns, or atmospheric dynamic/energy consistency. It is a prescribed sensitivity challenge, not corrected truth.",
+  "admission": "Keep BASE reference. Separate empirical support, numerical acceptance, and dynamic validation. Reject numerical corruption. Flag weather-state departures and unsupported transfer; do not claim a physical/regulatory worst merely because a run passes AERMOD. Retain adverse outcomes only for the evaluated episodes and explicitly conditional on transfer and model applicability.",
+  "stopping": "Complete this finite episode batch; do not automatically extend full seasons or restart prior queues. New full-grid or seasonal expansion depends on the resulting scientific diagnosis.",
+  "inputs": [
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-26\\ua\\outputs\\Seleccion_adversa_2026-11-04\\Soporte_conjunto_perturbaciones.csv",
+      "sha256": "faf062568d112ec96b18f8e5468ba203cb547218cac53594529474349c849d74"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-26\\ua\\outputs\\Seleccion_adversa_2026-11-04\\Discrepancias_diarias_conjuntas.csv",
+      "sha256": "0458df6c0239afe155eab9801929147d09f862c897608a8551c478fb2a91d0f1"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-26\\ua\\outputs\\Seleccion_adversa_2026-11-04\\Episodios_auditar.csv",
+      "sha256": "163aa0f8a3744b2c638bf435d2542cc35338b02dbdf160803c37eb4f407cc2c3"
+    }
+  ]
+}

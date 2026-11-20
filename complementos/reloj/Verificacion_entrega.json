@@ -1,0 +1,14 @@
+{
+  "status": "DELIVERY_VERIFIED",
+  "date": "2026-11-19",
+  "zip_sha256": "25fa6ca95761a2351003c3a4cb3efe3018b3b7bae0f78dfce5edd51393007011",
+  "zip_bytes": 1768534,
+  "zip_entries": 53,
+  "zip_crc_and_hashes_verified": true,
+  "portable_inputs_included": true,
+  "original_protocol_preserved": true,
+  "comparison_max_abs_error": 0.0,
+  "new_simulations": 0,
+  "manuscript_changed": false,
+  "github_published": false
+}

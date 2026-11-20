@@ -1,0 +1,140 @@
+{
+  "status": "PORTABLE_REPRODUCTION_VERIFIED",
+  "date": "2026-11-19",
+  "reproduction": {
+    "status": "REPRODUCED",
+    "completed_utc": "2026-11-19T23:52:10.024458+00:00",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "pandas": "3.0.1",
+      "matplotlib": "3.11.2",
+      "tzdata": "2026.6",
+      "python-dateutil": "3.0.0",
+      "Pillow": "13.0.0"
+    },
+    "input_and_code_files_verified": 43,
+    "tables_reproduced": 7,
+    "numeric_cells_compared": 48890,
+    "text_cells_compared": 59655,
+    "max_table_abs_error": 0.0,
+    "byte_identical_tables": 7,
+    "figures_generated": true,
+    "new_dispersion_runs": 0,
+    "physical_validation": false
+  },
+  "independent": {
+    "status": "INDEPENDENT_SCALAR_CHECK_PASSED",
+    "hour_case_rows": 11360,
+    "residual_values": 45440,
+    "max_residual_error": 7.105427357601002e-15,
+    "max_sd_error": 8.881784197001252e-16,
+    "shared_observation_ids_verified": true,
+    "arithmetic_method": "datetime/zoneinfo + bisect + interpolacion escalar + math.fsum; no importacion de la biblioteca de emparejamiento",
+    "protocol_sha256": "55b97ee22cd9a2225c6ec1c48e42f95614b22e7062edd473660e39ed324306b3",
+    "script_sha256": "5b8e5bd4f920ae3ecc043b526584e999d51e858f2a1070c60c11fb1fe34ca24d"
+  },
+  "isolation": {
+    "status": "SCIENTIFIC_PATHS_ISOLATED",
+    "negative_control_blocked": true,
+    "forbidden_accesses_during_calculation": 0,
+    "package_files_opened": [
+      "Entradas_portatiles.json",
+      "MANIFEST_SHA256.json",
+      "Protocolo_original.json",
+      "README.md",
+      "biblioteca\\tesis\\__init__.py",
+      "biblioteca\\tesis\\__pycache__\\__init__.cpython-312.pyc",
+      "biblioteca\\tesis\\__pycache__\\comun.cpython-312.pyc",
+      "biblioteca\\tesis\\__pycache__\\reloj.cpython-312.pyc",
+      "biblioteca\\tesis\\__pycache__\\validacion.cpython-312.pyc",
+      "biblioteca\\tesis\\comun.py",
+      "biblioteca\\tesis\\reloj.py",
+      "biblioteca\\tesis\\validacion.py",
+      "entradas\\amplitud_WS.json",
+      "entradas\\amplitudes.json",
+      "entradas\\observaciones.csv",
+      "entradas\\residuos_invierno.csv",
+      "entradas\\residuos_verano.csv",
+      "entradas\\ternas.json",
+      "entradas\\wrf_invierno.csv",
+      "entradas\\wrf_verano.csv",
+      "procedencia\\Adaptacion.json",
+      "procedencia\\Adaptaciones.diff",
+      "procedencia\\originales\\analizar.py",
+      "procedencia\\originales\\figuras.py",
+      "procedencia\\originales\\verificar.py",
+      "referencia\\Informe_sensibilidad_reloj_y_ternas.pdf",
+      "referencia\\Verificacion_analisis.json",
+      "referencia\\Verificacion_independiente.json",
+      "referencia\\figuras\\Amplitudes_reloj.png",
+      "referencia\\figuras\\Amplitudes_reloj.svg",
+      "referencia\\figuras\\Fechas_ternas_reloj.png",
+      "referencia\\figuras\\Fechas_ternas_reloj.svg",
+      "referencia\\figuras\\Vectores_dias_originales.png",
+      "referencia\\figuras\\Vectores_dias_originales.svg",
+      "referencia\\tablas\\Amplitudes_SD.csv",
+      "referencia\\tablas\\Cobertura.csv",
+      "referencia\\tablas\\Medias_diarias_comunes.csv",
+      "referencia\\tablas\\Reproduccion_ternas_originales.csv",
+      "referencia\\tablas\\Residuos_horarios_comunes.csv",
+      "referencia\\tablas\\Seleccion_ternas.csv",
+      "referencia\\tablas\\Ternas_fechas_originales.csv",
+      "reproducir.py",
+      "requirements.txt",
+      "scripts\\__pycache__\\comparar.cpython-312.pyc",
+      "scripts\\__pycache__\\entorno.cpython-312.pyc",
+      "scripts\\analizar.py",
+      "scripts\\comparar.py",
+      "scripts\\entorno.py",
+      "scripts\\figuras.py",
+      "scripts\\verificar.py"
+    ],
+    "working_directory": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-26\\ua\\work\\portatil_reloj_20261119\\prueba_aislada\\directorio actual distinto",
+    "copied_package": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-26\\ua\\work\\portatil_reloj_20261119\\prueba_aislada\\carpeta con espacios\\paquete",
+    "dependency_directory": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-19\\es\\work\\python_deps",
+    "reused_installed_dependencies": true,
+    "new_environment_installation": false
+  },
+  "graph_checks": [
+    {
+      "name": "Amplitudes_reloj.png",
+      "size": [
+        2100,
+        840
+      ],
+      "pixels_identical": true,
+      "reference_sha256": "e3dde40e7df5353481d588ae1dbe37aa963b6207a6305e910ea17d0c11c17a26",
+      "generated_sha256": "e3dde40e7df5353481d588ae1dbe37aa963b6207a6305e910ea17d0c11c17a26"
+    },
+    {
+      "name": "Fechas_ternas_reloj.png",
+      "size": [
+        2360,
+        980
+      ],
+      "pixels_identical": true,
+      "reference_sha256": "d966e2badd974a2deb9a835aa9e3d657b58eb5b3a36079f25721e4e972fce22a",
+      "generated_sha256": "d966e2badd974a2deb9a835aa9e3d657b58eb5b3a36079f25721e4e972fce22a"
+    },
+    {
+      "name": "Vectores_dias_originales.png",
+      "size": [
+        2120,
+        600
+      ],
+      "pixels_identical": true,
+      "reference_sha256": "d9495e874108724d35a02e986669825b6ae48c14fbacb319c23cb99095014b1d",
+      "generated_sha256": "d9495e874108724d35a02e986669825b6ae48c14fbacb319c23cb99095014b1d"
+    }
+  ],
+  "existing_output_rejected": true,
+  "existing_results_unchanged": true,
+  "original_package_unchanged": true,
+  "additional_platforms_tested": false,
+  "original_input_files_needed_at_run_time": false,
+  "new_simulations": 0,
+  "modified_input_rejected": true,
+  "modified_input_check_log_sha256": "272897c33eaabd969af25fafdc5ba347fc56d5a8f97870d9518b3849926a9202"
+}

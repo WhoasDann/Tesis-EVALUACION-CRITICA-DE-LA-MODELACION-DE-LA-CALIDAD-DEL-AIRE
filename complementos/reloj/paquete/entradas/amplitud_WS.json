@@ -1,0 +1,90 @@
+{
+  "created_utc": "2026-10-30T07:55:43.320407+00:00",
+  "status": "FROZEN_BEFORE_NEW_CONCENTRATIONS",
+  "seasons": {
+    "VERANO": {
+      "base": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_verano_2026-10-21",
+      "met": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_verano_2026-10-21\\Meteorologia\\aermet_20261021_145804_172910",
+      "model": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\Evaluacion_febrero_2026-10-21",
+      "start": "2016-12-21",
+      "offset": -3,
+      "qc": "Revision_QC_2026-10-21",
+      "end": "2017-03-20",
+      "days": 90
+    },
+    "INVIERNO": {
+      "base": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_invierno_2026-10-24",
+      "met": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_invierno_2026-10-24\\Revision_MMIF_2026-10-25\\AERMET_ejecucion_20261025_214304_003569",
+      "model": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\Evaluacion_meteorologica_invierno_2026-10-26",
+      "start": "2017-06-21",
+      "offset": -4,
+      "qc": "Revision_QC_2026-10-25",
+      "end": "2017-09-20",
+      "days": 92
+    }
+  },
+  "scenarios": [
+    "BASE",
+    "T_PLUS",
+    "WS_PLUS",
+    "T_WS_PLUS"
+  ],
+  "new_scenarios": [
+    "WS_PLUS",
+    "T_WS_PLUS"
+  ],
+  "new_cases": 728,
+  "reused_cases": 728,
+  "total_comparison_cases": 1456,
+  "scales": {
+    "VERANO": {
+      "T_C": 0.9532430952097826,
+      "WS_m_s": 2.537244551873854,
+      "training_days": 31,
+      "mean_WS_discrepancy": -1.7624733275799953,
+      "daily_T_WS_correlation": -0.3264563079216564
+    },
+    "INVIERNO": {
+      "T_C": 1.5858526234057533,
+      "WS_m_s": 2.9829174415717596,
+      "training_days": 29,
+      "mean_WS_discrepancy": -3.2219693334811526,
+      "daily_T_WS_correlation": -0.10333699021497458
+    }
+  },
+  "inputs": [
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\Discrepancias_ajuste_2026-10-19\\Residuos_ajuste.csv",
+      "sha256": "69ae8317a8b58f3f79e88331e99f8ce9b9bc1d5087aebed2ae607983aa36cde3"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\Diagnostico_meteorologico_invierno_2026-10-25\\Residuos_ajuste.csv",
+      "sha256": "aa2be7ff2b1a3c62a4f1b94b2672ca3a6a9579e6889eeb1a5ba18aa96c3e27c8"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-26\\ua\\outputs\\Revision_Huneeus_2026-10-28\\Estadisticas_discrepancias_locales.json",
+      "sha256": "940d6907ed671a134ee7bba2d331745e24c43f74aa4452709f1c27f19857d3b3"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-26\\ua\\outputs\\Sensibilidad_estacional_2026-10-29\\Auditoria_final.json",
+      "sha256": "c9c9d7c929302b06d55597d9a9f0699680ae38749b0bc061ed965603d1073840"
+    }
+  ],
+  "amplitude": "Sample SD (ddof=1) of daily mean signed Obs-WRF discrepancies, >=18 joint valid hours/day. WS discrepancy is norm(observed vector) minus norm(WRF vector), NOT norm of u/v discrepancies.",
+  "choice": "One joint positive corner (T+SD, WS+SD) and necessary WS-only control. Signs chosen before new concentrations; not optimized for high pollution. Does not sample both signs or a joint probability distribution.",
+  "operator": "T_plus profile is reused byte-for-byte from audited seasonal campaign. Add SD_WS times original cubic BASE-PBL weight to scalar speed at valid non-calm profile levels; retain serialized direction exactly. At exactly zero speed preserve zero (direction undefined), and report exception count. Above BASE PBL profiles unchanged.",
+  "interface": "Prescribed MMIF ONSITE sensitivity -> rerun AERMET -> AERMOD. Retain auxiliary RH, pressure, heat flux, UST, MHGT, sounding and surface inputs. No WRF reintegration or physical/probabilistic calibration.",
+  "interaction": "I = C(T+,WS+) - C(T+,BASE_WS) - C(BASE_T,WS+) + C(BASE). Difference-in-differences on identical hours, dates, emissions and receptors. This is the 0/1 factorial interaction coefficient; do not confuse with +/-1 coefficient I/4 or factorial effect I/2.",
+  "statistics": "Deterministic contrasts; dates are meteorological blocks, not independent experimental replicates. No ANOVA p-values or calibrated confidence intervals from this design.",
+  "coverage": "Same 90 summer /92 winter execution dates,40 fixed nodes,2pollutants. 17h final summer day; reconstruct winter civil calendar and missing masks exactly as completed campaign.",
+  "references": [
+    {
+      "title": "NIST Two-level full factorial designs",
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section3/pri3331.htm"
+    },
+    {
+      "title": "NIST Interaction effects matrix plot",
+      "url": "https://itl.nist.gov/div898/handbook/pri/section5/pri594.htm"
+    }
+  ]
+}

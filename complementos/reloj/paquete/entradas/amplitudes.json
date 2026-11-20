@@ -1,0 +1,125 @@
+{
+  "created_utc": "2026-10-29T18:31:02.790086+00:00",
+  "status": "FROZEN_BEFORE_CONCENTRATIONS",
+  "seasons": {
+    "VERANO": {
+      "base": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_verano_2026-10-21",
+      "met": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_verano_2026-10-21\\Meteorologia\\aermet_20261021_145804_172910",
+      "model": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\Evaluacion_febrero_2026-10-21",
+      "start": "2016-12-21",
+      "offset": -3,
+      "qc": "Revision_QC_2026-10-21",
+      "end": "2017-03-20",
+      "days": 90
+    },
+    "INVIERNO": {
+      "base": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_invierno_2026-10-24",
+      "met": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_invierno_2026-10-24\\Revision_MMIF_2026-10-25\\AERMET_ejecucion_20261025_214304_003569",
+      "model": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\Evaluacion_meteorologica_invierno_2026-10-26",
+      "start": "2017-06-21",
+      "offset": -4,
+      "qc": "Revision_QC_2026-10-25",
+      "end": "2017-09-20",
+      "days": 92
+    }
+  },
+  "days_per_season": {
+    "VERANO": 90,
+    "INVIERNO": 92
+  },
+  "daily_cases": 2548,
+  "scenarios": [
+    "BASE",
+    "T_MINUS",
+    "T_PLUS",
+    "U_MINUS",
+    "U_PLUS",
+    "V_MINUS",
+    "V_PLUS"
+  ],
+  "scales": {
+    "VERANO": {
+      "T": 0.9532430952097826,
+      "u": 1.7798505020855642,
+      "v": 4.531311260521651
+    },
+    "INVIERNO": {
+      "T": 1.5858526234057533,
+      "u": 3.54133746848312,
+      "v": 6.724596690333822
+    }
+  },
+  "amplitude": "Sample SD of daily mean signed Obs-WRF discrepancy; fixed original training windows; >=18 joint valid hours/day. No bias correction, fitting or scenario selection on concentrations.",
+  "date_selection": "All available target hours of Dec21-Mar20 and Jun21-Sep20. Summer2153targethours/2151valid; winter2207targethours/2205valid. Winter clock fixedLST UTC-4; reconstruct civil days across DST. Summer lastday17hours; do not invent missing observations or claim complete24h.",
+  "interface": "MMIF serialized ONSITE profiles -> rerun AERMET -> AERMOD. Controlled input sensitivity at this interface. Does NOT claim equivalence to altered wrfout -> MMIF or dynamically consistent WRF.",
+  "transfer": "Station-scale amplitude applied to MMIF column I43/J44, a spatial transfer hypothesis. A single vertical operator: deltaX*w, w=1-3s^2+2s^3, s=clip((z-zref)/(BASE_MHGT-zref),0,1); zref=2m for T and10m for wind. Full amplitude below reference, zero above BASE PBL.",
+  "thermal": "Perturb serialized TT; recompute DT01 from rounded TT03-TT01. Retain RH, pressure, heat flux, UST and MHGT and original sounding/surface inputs. This is prescribed profile sensitivity, not thermal energy balance or constant water-vapor mixing ratio.",
+  "wind": "Convert serialized meteorological direction/speed to east/north u,v; add only selected component; recompute speed/direction. No arbitrary clipping. Temperature and all auxiliary inputs fixed for u/v cases.",
+  "other_fields": "Auxiliary BASE states retained. AERMET regenerates its dependent outputs. Technical QC checks numerical admissibility, not physical validation of mountain flow or station transfer.",
+  "boundary": "Perturb all target-hour ONSITE records; original auxiliary context outside remains BASE. No fabrication for missing records. Test pilot overlap byte/numerically before reusing results.",
+  "comparison": "Same dates, emissions,40receptors and common valid hours. Whole available seasonal windows2016/2017; daily paired differences and absolute means. Native Linux/Windows equality checked with8canaries. No calibrated intervals, scenario probabilities, full-grid maxima, or other-year representativeness.",
+  "panel": "Same geometrically selected40points as previous pilot, including LBCEN/PCAR/PALP/SULF and all existing zones; no selection on concentrations.",
+  "queue": "Exclusive whole-day batches on3hosts,2workers each; preserve existing pilot. Linux drains current fullgridBASE jobs and then switches; native cross-platform canaries required before Linux production.",
+  "inputs": [
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-26\\ua\\outputs\\Revision_Huneeus_2026-10-28\\Estadisticas_discrepancias_locales.json",
+      "sha256": "940d6907ed671a134ee7bba2d331745e24c43f74aa4452709f1c27f19857d3b3"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\Discrepancias_ajuste_2026-10-19\\Residuos_ajuste.csv",
+      "sha256": "69ae8317a8b58f3f79e88331e99f8ce9b9bc1d5087aebed2ae607983aa36cde3"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\Diagnostico_meteorologico_invierno_2026-10-25\\Residuos_ajuste.csv",
+      "sha256": "aa2be7ff2b1a3c62a4f1b94b2672ca3a6a9579e6889eeb1a5ba18aa96c3e27c8"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_verano_2026-10-21\\Meteorologia\\aermet_20261021_145804_172910\\onsite.dat",
+      "sha256": "95f76e8ae1ac72a6ffaca1c072cdae3b1a664d1d5f3de9f671910e4886c1f536"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_verano_2026-10-21\\Meteorologia\\aermet_20261021_145804_172910\\upper.dat",
+      "sha256": "e2004faec497678701bee4db23d01060e539ce8135fac12bb3af642ec0c7b929"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_verano_2026-10-21\\Meteorologia\\aermet_20261021_145804_172910\\surface.dat",
+      "sha256": "4de49fdbc35259fb52797234d225e5746c2ee741336a94e146bc0a5ad8847c8a"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_verano_2026-10-21\\Meteorologia\\aermet_20261021_145804_172910\\met.IN1",
+      "sha256": "68dd25b327c684a4fc491a6b509441eb1b6afe7792c7588438f92b63b16abd93"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_verano_2026-10-21\\Meteorologia\\aermet_20261021_145804_172910\\met.SFC",
+      "sha256": "89af1931ab0c64d19260694645eb26a56a12eec11f77f3dbfc162b9b83b18730"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_verano_2026-10-21\\Meteorologia\\aermet_20261021_145804_172910\\met.PFL",
+      "sha256": "6985cae235ab43555ea264086bc608c07fd4190cf729d542a14e75cc062bd754"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_invierno_2026-10-24\\Revision_MMIF_2026-10-25\\AERMET_ejecucion_20261025_214304_003569\\onsite.dat",
+      "sha256": "995e76811df99c4015b9eb4a01aed7689e3a3fdd77fdf97ecb7fbad22fdb5524"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_invierno_2026-10-24\\Revision_MMIF_2026-10-25\\AERMET_ejecucion_20261025_214304_003569\\upper.dat",
+      "sha256": "b4c7b567b14e131228f13a0f3a17470bafe5a3dc193b25c7080ad94e431aa470"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_invierno_2026-10-24\\Revision_MMIF_2026-10-25\\AERMET_ejecucion_20261025_214304_003569\\surface.dat",
+      "sha256": "7bb141c6f394e0530ed3e6b81314395755bea8943a4ff93665322bf40d4d44b7"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_invierno_2026-10-24\\Revision_MMIF_2026-10-25\\AERMET_ejecucion_20261025_214304_003569\\met.IN1",
+      "sha256": "c528bb44cb7b3b7550779e6ad5aa0f84a597af787ae32598e45d36006b377f9d"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_invierno_2026-10-24\\Revision_MMIF_2026-10-25\\AERMET_ejecucion_20261025_214304_003569\\met.SFC",
+      "sha256": "b7a8e25aaf5d23b1cd619a673f0413d056dd39bd58b18bbfc3ed701b2d88708e"
+    },
+    {
+      "path": "C:\\Users\\dcitu\\Documents\\Codex\\2026-10-08\\hem\\outputs\\BASE_invierno_2026-10-24\\Revision_MMIF_2026-10-25\\AERMET_ejecucion_20261025_214304_003569\\met.PFL",
+      "sha256": "526582938ec90bc1aa478395e92f202eb623e94b98721e634e9ae82cdca198e5"
+    }
+  ]
+}

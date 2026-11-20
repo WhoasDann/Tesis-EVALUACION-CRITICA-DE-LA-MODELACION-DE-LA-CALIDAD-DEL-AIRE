@@ -1,0 +1,42 @@
+{
+  "observaciones": {
+    "relative_path": "entradas/observaciones.csv",
+    "sha256": "8e5c553ae8d2476553a46a631cf4a3d82da7b6821f31c9d3497d81b42c636f25"
+  },
+  "wrf_verano": {
+    "relative_path": "entradas/wrf_verano.csv",
+    "sha256": "dd08ff101267ab6420fbb1cc370cba1ffbd42f28eb6d823211941f80eca93025"
+  },
+  "wrf_invierno": {
+    "relative_path": "entradas/wrf_invierno.csv",
+    "sha256": "72885132613a87da0ec5d6e457532d99fa21a5be52e741c15fafd545ba5e10cc"
+  },
+  "residuos_verano": {
+    "relative_path": "entradas/residuos_verano.csv",
+    "sha256": "69ae8317a8b58f3f79e88331e99f8ce9b9bc1d5087aebed2ae607983aa36cde3"
+  },
+  "residuos_invierno": {
+    "relative_path": "entradas/residuos_invierno.csv",
+    "sha256": "aa2be7ff2b1a3c62a4f1b94b2672ca3a6a9579e6889eeb1a5ba18aa96c3e27c8"
+  },
+  "amplitudes": {
+    "relative_path": "entradas/amplitudes.json",
+    "sha256": "fe571c578a182fa06aef606c1d4f4574da3896d50bd3221ad911cd36d33481b4"
+  },
+  "amplitud_WS": {
+    "relative_path": "entradas/amplitud_WS.json",
+    "sha256": "6b97e0985772edcf8638d7ac982241581bb6cb6ff7ac8a7e4c5ebbf02e8adc8c"
+  },
+  "ternas": {
+    "relative_path": "entradas/ternas.json",
+    "sha256": "137f5bfeae78c1fe4831ad6895bc6c3b2afc9bffc2fe90c93d25cb29b9e692ab"
+  },
+  "reloj_biblioteca": {
+    "relative_path": "biblioteca/tesis/reloj.py",
+    "sha256": "1ac6b0dca7afc6c32682c66ea404c2b0407a137c477f9fa707ff11eb915a3655"
+  },
+  "componentes_biblioteca": {
+    "relative_path": "biblioteca/tesis/validacion.py",
+    "sha256": "8142e6af246c25323df97b0eea83bb98ac143c60f8369b705997322ae01d5ac6"
+  }
+}
