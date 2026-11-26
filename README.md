@@ -2,7 +2,11 @@
 
 Este repositorio documenta la reconstrucción de las emisiones viales de Los Bronces Integrado y la sensibilidad de los aportes de MP10 y MP2,5 a cambios en la meteorología. La comparación se desarrolla en Los Bronces, Piedra Carvajal, Sulfatos y el glaciar La Paloma. La simulación conserva un panel de 40 receptores.
 
-## Reproducción de los resultados
+## Campaña final de doce configuraciones
+
+El [paquete de reproducción de la campaña final](complementos/Reproduccion_doce/README.md) reúne las concentraciones horarias comunes de 40 receptores, el programa y las tablas de referencia del anexo D de la tesis. Permite recalcular las medias, los máximos diarios, los contrastes de interacción y el orden de los cuatro receptores destacados para los 86 días completos de verano y 90 de invierno.
+
+## Reproducción de la campaña inicial
 
 Se requiere Python 3.10 o posterior. Los siguientes comandos se ejecutan desde la raíz de una copia descargada o clonada. La verificación, el cálculo de las medias y la preparación de los casos utilizan la biblioteca estándar de Python.
 

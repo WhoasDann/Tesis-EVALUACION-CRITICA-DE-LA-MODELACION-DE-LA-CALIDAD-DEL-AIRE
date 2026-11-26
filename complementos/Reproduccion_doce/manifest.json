@@ -1,0 +1,12 @@
+{
+  "files": {
+    "datos/Horas_comunes_INVIERNO_MP10.csv.gz": "83181aed2af8632db19997edd4cf2c6c18204a5444fdb1c987b114c2901d0ca2",
+    "datos/Horas_comunes_INVIERNO_MP25.csv.gz": "d76e4be6255f203c9190babadfbb6ed82ff594062f57977b72008bc2bf819fbe",
+    "datos/Horas_comunes_VERANO_MP10.csv.gz": "726cfb2d119412fe23978ddd281dea07e1337ecf501228f2c96c63ac289ea173",
+    "datos/Horas_comunes_VERANO_MP25.csv.gz": "912d7bd554bafaa4dd52fd489ab3f22f18c2f84ff5bedb3b6d736137b7874cad",
+    "referencia/Interacciones.csv": "2afae75daec28dece6725ffb649173a2477796578d73f64ff5480e7a307d27e5",
+    "referencia/Medias_recalculadas.csv": "61b93d8ef0da74db8b90a109ff6c637766bc84a79077b46bf6e1b5c9bf807ea3",
+    "referencia/Orden_medias.csv": "5629d9c68b584cc2db816bc76613eb9071d33cb736c27d76c5b2addff537d644",
+    "referencia/Seleccion.csv": "614fa8012be6ab80e8ec4f194d4865802e7ec3ec0f285399b378557f1bda9c25"
+  }
+}

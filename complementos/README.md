@@ -1,9 +1,10 @@
 # Complementos posteriores de la tesis
 
-Actualización del 20 de noviembre de 2026. La campaña inicial de 3.314 casos permanece sin cambios. Esta carpeta incorpora controles y diagnósticos posteriores, con distintos niveles de reproducción.
+Actualización del 26 de noviembre de 2026. La campaña inicial de 3.314 casos permanece sin cambios. Esta carpeta incorpora controles y diagnósticos posteriores, con distintos niveles de reproducción.
 
 | Complemento | Material incluido | Alcance de reproducción |
 |---|---|---|
+| [Campaña final de doce configuraciones](Reproduccion_doce/README.md) | Concentraciones horarias, código, manifiesto y tablas de referencia | Reproducción de los indicadores publicados para los cuatro receptores destacados |
 | [Horario y ternas](reloj/paquete/README.md) | Insumos, código, protocolo, tablas, figuras y control independiente | Ejecución portable del diagnóstico meteorológico; siete tablas y tres gráficos comprobados |
 | [Evaluación H1 y H2](evaluacion_h1_h2.zip) | Protocolos, matrices, controles numéricos, figuras y código histórico | Evidencia de 42 corridas adicionales; no incluye todos sus archivos nativos de entrada y salida |
 | [Transferencia física](diagnostico_transferencia.zip) | Series WRF extraídas, perfiles, contrastes, figuras, trazabilidad y código histórico | Diagnóstico descriptivo; la repetición completa requiere NetCDF y otros insumos locales |
