@@ -8,7 +8,11 @@ Actualización del 26 de noviembre de 2026. La campaña inicial de 3.314 casos p
 | [Horario y ternas](reloj/paquete/README.md) | Insumos, código, protocolo, tablas, figuras y control independiente | Ejecución portable del diagnóstico meteorológico; siete tablas y tres gráficos comprobados |
 | [Evaluación H1 y H2](evaluacion_h1_h2.zip) | Protocolos, matrices, controles numéricos, figuras y código histórico | Evidencia de 42 corridas adicionales; no incluye todos sus archivos nativos de entrada y salida |
 | [Transferencia física](diagnostico_transferencia.zip) | Series WRF extraídas, perfiles, contrastes, figuras, trazabilidad y código histórico | Diagnóstico descriptivo; la repetición completa requiere NetCDF y otros insumos locales |
-| [Unidades de concentración](auditoria_unidades.zip) | Auditoría, factores condicionales, informe, tablas y código histórico | Los factores no se aplican a las concentraciones; no se acredita equivalencia volumétrica MP10 |
+| [Unidades de concentración](auditoria_unidades.zip) | Auditoría, factores condicionales, informe, tablas y código histórico | Auditoría histórica: allí los factores no se aplicaban. El manuscrito vigente incorpora una aplicación exploratoria separada en Analisis_actual, sin acreditar equivalencia normativa |
+
+## Análisis vigentes adicionales
+
+[Analisis_actual](Analisis_actual/README.md) reproduce la normalización exploratoria MP10, los recuentos de días y los ciclos meteorológicos incorporados al manuscrito. Las referencias a H1/H2 de los ZIP identifican controles históricos; la organización vigente del escrito utiliza preguntas y cuatro objetivos.
 
 ## Reproducción del horario
 
@@ -20,9 +24,9 @@ python complementos/reloj/paquete/reproducir.py --salida salida_reloj
 
 El [README del paquete](reloj/paquete/README.md) detalla la instalación y los controles. La salida debe ser nueva. El [registro de portabilidad](reloj/Verificacion_portabilidad.json) acredita la prueba desde otra carpeta con bloqueo de los datos científicos originales; se reutilizaron las dependencias instaladas y no se ensayó un segundo sistema operativo.
 
-## Interpretación de los controles
+## Interpretación de los controles históricos
 
-En cinco episodios de 24 horas, 14 aumentos de 40 contrastes H1 y ocho inversiones de 60 contrastes H2 superaron los márgenes empíricos retrospectivos de las representaciones ensayadas. La comprobación es diaria y no certifica convergencia de medias estacionales o máximos de toda la malla. Los diagnósticos de transferencia y horario conservan las condiciones físicas de la interpretación.
+En la campaña histórica de discrepancias y ternas, en cinco episodios de 24 horas, 14 aumentos de 40 contrastes H1 y ocho inversiones de 60 contrastes H2 superaron los márgenes empíricos retrospectivos de las representaciones ensayadas. La comprobación es diaria y no certifica convergencia de medias estacionales o máximos de toda la malla. Los diagnósticos de transferencia y horario conservan las condiciones físicas de la interpretación.
 
 Los ZIP contienen un alcance propio y hashes de los archivos archivados. Los scripts históricos documentan los cálculos y sus dependencias; no deben confundirse con el programa portable de horario. Los estados fechados de los recibos conservan el contexto en que se generaron, incluido el hecho de que entonces no estaban publicados.
 

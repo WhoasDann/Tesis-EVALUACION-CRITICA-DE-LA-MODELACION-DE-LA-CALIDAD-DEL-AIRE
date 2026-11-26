@@ -1,3 +1,4 @@
+# Alcance: campaña histórica de 3314 casos. Diseño final: complementos/Reproduccion_doce.
 """Curvas empíricas de aportes diarios al comparar las nueve configuraciones."""
 from collections import defaultdict
 from pathlib import Path

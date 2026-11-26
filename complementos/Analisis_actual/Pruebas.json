@@ -1,0 +1,71 @@
+{
+  "fecha": "2026-11-26",
+  "resultados": {
+    "doce": {
+      "status": "PASSED",
+      "coverage": [
+        {
+          "season": "VERANO",
+          "pollutant": "MP10",
+          "hours": 2150,
+          "days": 86
+        },
+        {
+          "season": "VERANO",
+          "pollutant": "MP25",
+          "hours": 2150,
+          "days": 86
+        },
+        {
+          "season": "INVIERNO",
+          "pollutant": "MP10",
+          "hours": 2205,
+          "days": 90
+        },
+        {
+          "season": "INVIERNO",
+          "pollutant": "MP25",
+          "hours": 2205,
+          "days": 90
+        }
+      ],
+      "tables": [
+        {
+          "table": "Medias_recalculadas",
+          "rows": 192
+        },
+        {
+          "table": "Interacciones",
+          "rows": 96
+        },
+        {
+          "table": "Orden_medias",
+          "rows": 264
+        },
+        {
+          "table": "Seleccion",
+          "rows": 16
+        }
+      ],
+      "seasonal_reversals": 0,
+      "note": "La tolerancia de reproducción 1e-9 solo cubre agregación aritmética; no es delta_J de H1/H2 ni validación física."
+    },
+    "normalizacion": {
+      "status": "PASSED",
+      "dias_verano": 86,
+      "dias_invierno": 90,
+      "filas_diarias": 704,
+      "alcance": "Normalización exploratoria, no acreditación normativa."
+    },
+    "meteorologia": {
+      "status": "PASSED",
+      "alcance": "Reproducción desde pares archivados; no reextracción de NetCDF."
+    },
+    "amplitudes": {
+      "status": "PASSED",
+      "registros": 4270,
+      "amplitudes": 4
+    }
+  },
+  "nota": "Ejecución local desde la copia del repositorio; no repetición de los modelos."
+}

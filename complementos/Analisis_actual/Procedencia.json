@@ -1,0 +1,9 @@
+{
+  "fecha": "2026-11-26",
+  "scripts": {
+    "figuras_referencia_y_alcances_20261125\\figuras.py": "f5b6cfe98de8c1bd998590c19869ebcd7331d09b540f45336662d062927f3da3",
+    "formato_ciclos_20261126\\graficar.py": "7118e91eb8aa7bfdafddb4e31bd3e8da53b12e5efd4384506173a4db32b9c684",
+    "anexos_meteorologia_20261125\\meteorologia.py": "fe5649cd848d750b3756aab9312fdd506a498c5b50d2bae94c1aa60352d5208b"
+  },
+  "nota": "Programas adaptados para consumir las extracciones y salidas distribuidas, sin repetir simulaciones."
+}

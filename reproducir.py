@@ -1,3 +1,4 @@
+# Alcance: campaña histórica de 3314 casos. Diseño final: complementos/Reproduccion_doce.
 """Reconstitución de entradas y análisis de resultados de la tesis Los Bronces."""
 import argparse
 from array import array

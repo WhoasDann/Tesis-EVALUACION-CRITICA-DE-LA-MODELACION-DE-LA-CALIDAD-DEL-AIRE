@@ -1,0 +1,216 @@
+{
+  "Los Bronces/VERANO": [
+    {
+      "scenario": "BASE",
+      "criterio": "base",
+      "dias": 86,
+      "oms": 84,
+      "chile": 61,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    },
+    {
+      "scenario": "T_MINUS_WS_MINUS_INV",
+      "criterio": "mean",
+      "dias": 86,
+      "oms": 86,
+      "chile": 78,
+      "nuevos_chile": 17,
+      "reducen_chile": 0
+    },
+    {
+      "scenario": "T_MINUS_WS_MINUS",
+      "criterio": "peak",
+      "dias": 86,
+      "oms": 86,
+      "chile": 78,
+      "nuevos_chile": 17,
+      "reducen_chile": 0
+    }
+  ],
+  "Los Bronces/INVIERNO": [
+    {
+      "scenario": "BASE",
+      "criterio": "base",
+      "dias": 90,
+      "oms": 78,
+      "chile": 39,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    },
+    {
+      "scenario": "T_MINUS_WS_MINUS_INV",
+      "criterio": "both",
+      "dias": 90,
+      "oms": 88,
+      "chile": 69,
+      "nuevos_chile": 30,
+      "reducen_chile": 0
+    }
+  ],
+  "Piedra Carvajal/VERANO": [
+    {
+      "scenario": "BASE",
+      "criterio": "base",
+      "dias": 86,
+      "oms": 2,
+      "chile": 0,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    },
+    {
+      "scenario": "T_MINUS_WS_MINUS",
+      "criterio": "both",
+      "dias": 86,
+      "oms": 10,
+      "chile": 2,
+      "nuevos_chile": 2,
+      "reducen_chile": 0
+    }
+  ],
+  "Piedra Carvajal/INVIERNO": [
+    {
+      "scenario": "BASE",
+      "criterio": "base",
+      "dias": 90,
+      "oms": 2,
+      "chile": 0,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    },
+    {
+      "scenario": "T_PLUS_WS_MINUS",
+      "criterio": "mean",
+      "dias": 90,
+      "oms": 10,
+      "chile": 3,
+      "nuevos_chile": 3,
+      "reducen_chile": 0
+    },
+    {
+      "scenario": "T_MINUS_WS_MINUS",
+      "criterio": "peak",
+      "dias": 90,
+      "oms": 9,
+      "chile": 3,
+      "nuevos_chile": 3,
+      "reducen_chile": 0
+    }
+  ],
+  "Sulfatos/VERANO": [
+    {
+      "scenario": "BASE",
+      "criterio": "base",
+      "dias": 86,
+      "oms": 0,
+      "chile": 0,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    },
+    {
+      "scenario": "T_PLUS_WS_MINUS",
+      "criterio": "mean",
+      "dias": 86,
+      "oms": 0,
+      "chile": 0,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    },
+    {
+      "scenario": "WS_MINUS",
+      "criterio": "peak",
+      "dias": 86,
+      "oms": 0,
+      "chile": 0,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    }
+  ],
+  "Sulfatos/INVIERNO": [
+    {
+      "scenario": "BASE",
+      "criterio": "base",
+      "dias": 90,
+      "oms": 0,
+      "chile": 0,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    },
+    {
+      "scenario": "T_PLUS_WS_MINUS",
+      "criterio": "mean",
+      "dias": 90,
+      "oms": 0,
+      "chile": 0,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    },
+    {
+      "scenario": "T_MINUS_WS_MINUS",
+      "criterio": "peak",
+      "dias": 90,
+      "oms": 0,
+      "chile": 0,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    }
+  ],
+  "La Paloma/VERANO": [
+    {
+      "scenario": "BASE",
+      "criterio": "base",
+      "dias": 86,
+      "oms": 0,
+      "chile": 0,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    },
+    {
+      "scenario": "T_PLUS_WS_MINUS",
+      "criterio": "mean",
+      "dias": 86,
+      "oms": 1,
+      "chile": 0,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    },
+    {
+      "scenario": "WS_MINUS",
+      "criterio": "peak",
+      "dias": 86,
+      "oms": 1,
+      "chile": 0,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    }
+  ],
+  "La Paloma/INVIERNO": [
+    {
+      "scenario": "BASE",
+      "criterio": "base",
+      "dias": 90,
+      "oms": 0,
+      "chile": 0,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    },
+    {
+      "scenario": "T_PLUS_WS_MINUS",
+      "criterio": "mean",
+      "dias": 90,
+      "oms": 0,
+      "chile": 0,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    },
+    {
+      "scenario": "T_MINUS_WS_MINUS",
+      "criterio": "peak",
+      "dias": 90,
+      "oms": 0,
+      "chile": 0,
+      "nuevos_chile": 0,
+      "reducen_chile": 0
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "scales": {
+    "VERANO": {
+      "T": 3.3339225877048326,
+      "WS": 1.9465785517303953
+    },
+    "INVIERNO": {
+      "T": 4.747857490031856,
+      "WS": 3.2213414558727043
+    }
+  },
+  "coverage": {
+    "VERANO": {
+      "start": "2016-12-21",
+      "end_exclusive": "2017-03-21",
+      "calendar_days": 90,
+      "admitted_days": 90,
+      "admitted_hours": 2153,
+      "rejected_days": []
+    },
+    "INVIERNO": {
+      "start": "2017-06-21",
+      "end_exclusive": "2017-09-21",
+      "calendar_days": 92,
+      "admitted_days": 89,
+      "admitted_hours": 2117,
+      "rejected_days": [
+        "2017-06-26",
+        "2017-06-27",
+        "2017-09-04"
+      ]
+    }
+  },
+  "amplitude": "Sample SD (ddof=1) of hourly OBSERVED temperature Temperatura_aire_C and scalar wind speed Velocidad_viento_m_s over full seasonal windows. Not discrepancies, not the SD of daily means. Days require >=18 finite joint observations; no imputation. Original station civil clock remains a documented assumption."
+}

@@ -1,0 +1,12 @@
+{
+  "VERANO": {
+    "T_y_WS": 2146,
+    "humedad": 2095,
+    "direccion": 2017
+  },
+  "INVIERNO": {
+    "T_y_WS": 2152,
+    "humedad": 2152,
+    "direccion": 2091
+  }
+}

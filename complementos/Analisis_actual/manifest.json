@@ -1,0 +1,16 @@
+{
+  "files": {
+    "datos/Calendario_INVIERNO.csv.gz": "3710f9b475c0b6a75dcaaa2511a34fd5821a3484cd48bec3b8267e9844982bcc",
+    "datos/Calendario_VERANO.csv.gz": "f2cdf40dd577bcf6dcf1f0962b5d936c5d13eeb13e90e4010be70303f28d710d",
+    "datos/Factores_condicionales_horarios.csv.gz": "e68949431f13a1727d4bcb8eee95e236df39be461b53e7793b5b245982e9ba2d",
+    "datos/Medias_diarias_civiles_doce.csv.gz": "e093f708f4723b8571d082ddbf81083d7409478d4b42bb6478acc2f527f2f09d",
+    "datos/Observaciones_validas_T_WS.csv.gz": "0499e2fa5e77f911a7393b780bf00f7fa942a11d7d1e2e3adb5ec31f43c9d65e",
+    "datos/pares_invierno.csv.gz": "fe6dd9f28b6dba8cb486e75c7d107aba169933be2e32eb87b2061f7a7c124941",
+    "datos/pares_verano.csv.gz": "e4e1424f9fbb92011aa896f97e0e4cb46356460d49923ed42c321ad6d2e2d15f",
+    "datos/Ubicacion_puntos.csv": "4f37864193104b1261791633d6eb16cb1cfae755e51bad111273cbcc87e4f60b",
+    "referencia/Amplitudes.json": "5047181d2c8d1fa575a00ac32cf765bdb6a6228014f8c86a298cadf7b616770d",
+    "referencia/Medias_diarias_MP10_normalizacion_exploratoria.csv.gz": "791c033ec78bfc41d7893a8fba3fc7ae9358d81a98970a4d0ffbad0c461beda6",
+    "referencia/pares_recuento.json": "7d2c48c1b7bb581650acb586cfe58c9d11962c1566ddfca071f6df8e0349aab2",
+    "referencia/recuentos.json": "eb52ad3ac0476ade2e1483bd662d011eb6d37b5dbf7f0da674c4596bb67841c7"
+  }
+}

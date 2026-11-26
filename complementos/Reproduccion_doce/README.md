@@ -17,6 +17,8 @@ Se reconstruyen 192 medias, 16 selecciones de mayor media y máximo diario, 96 c
 
 ## Escenarios y límites
 
-T_MINUS/T_PLUS corresponden a BASE −/+ σ_T. WS_MINUS/WS_PLUS corresponden a BASE −/+ σ_WS. Los nombres combinados modifican ambos factores. El sufijo INV permite inversión de 180° cuando la resta firmada de rapidez atraviesa cero; sin INV se limita la rapidez a cero. Las amplitudes proceden de la desviación estándar muestral de observaciones horarias por temporada, no de discrepancias con WRF ni de medias diarias.
+T_MINUS/T_PLUS corresponden a BASE −/+ σ_T. WS_MINUS/WS_PLUS corresponden a BASE −/+ σ_WS. Los nombres combinados modifican ambos factores. En el manuscrito vigente, el ajuste vectorial se distingue mediante σ con subíndice WS y flecha vectorial (σ_WS⃗). Los identificadores de archivo se conservan por trazabilidad: el sufijo INV permite inversión de 180° cuando la resta firmada de rapidez atraviesa cero; sin INV se limita la rapidez a cero. Las amplitudes proceden de la desviación estándar muestral de observaciones horarias por temporada, no de discrepancias con WRF ni de medias diarias.
 
 Este paquete permite reproducir indicadores desde salidas horarias ya generadas. No incluye los ejecutables, todos los insumos nativos ni una repetición completa de WRF–MMIF–AERMET–AERMOD. Los cuatro CSV horarios incorporan el calendario y la máscara común auditados; no sustituyen las salidas nativas conservadas en el archivo del proyecto. No asigna probabilidades, valida transferencia física ni acredita un peor caso regulatorio. Los resultados son aportes viales parciales y no concentración ambiental total.
+
+El manuscrito vigente y sus fuentes están en [tesis](../../tesis/README.md). Los recuentos con normalización exploratoria y los ciclos meteorológicos se reproducen con [Analisis_actual](../Analisis_actual/README.md). La tolerancia aritmética no representa validación física ni tolerancia de convergencia de los modelos.
